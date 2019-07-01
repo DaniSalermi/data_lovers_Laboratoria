@@ -8,8 +8,7 @@ display: inline-block;
 }
 
 header {
-background-color: #179387;
-height: 3rem;
+
 }
 
 nav navbar, navbar-expand-lg, navbar-dark, bg-dark {
@@ -31,12 +30,11 @@ color: #0D3F67;
 }
 
 .homebtn {
-margin-left: 8%;
-margin-right: 12%;
+margin-left: 50%;
 }
 
 .countrybtn {
-margin-left: 12%;
+margin-right: 35%;
 }
 
 button {
@@ -61,14 +59,4 @@ footer{
 	margin-top: 380px;
 	width: 100%;
 	position: fixed;
-}
-
-.pages {
-border-style: solid;
-width: 15%;
-height: 50%;
-margin-left: 75%;
-margin-top: 3%;
-text-align: center;
-font-size: 100%;
 }
