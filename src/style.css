@@ -1,1 +1,54 @@
+:root {
+  /*Variables*/
+  --light_gray: #f9f9f9;
+  --main_color: #179387;
+  --dark_purple: #6b48ff;
+  --dark_blue: #0d3f67;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--dark_blue);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+.heroBanner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  width: auto;
+  background-color: #f9f9f9;
+  align-content: space-around;
+  padding: 40px 143px 57px 143px;
+}
+.textHeroBanner h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.textHeroBanner h3 {
+  font-weight: normal;
+}
+.imgHeroBanner {
+  justify-self: right;
+  position: relative;
+  height: 60%;
+  width: 70%;
+  object-fit: contain;
+}
+
+.button {
+  border: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding: 11px 80px;
+  background: var(--dark_purple);
+  border-radius: 20px;
+  max-width: 287px;
+  max-height: 51px;
+  cursor: pointer;
+}
