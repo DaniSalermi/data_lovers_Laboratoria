@@ -1,6 +1,8 @@
 /* Manejo del DOM */
 
-// /console.log(WORLDBANK);
+
+/*Varibles para obtener data de cada país, ya separada*/
+//console.log(WORLDBANK);
 const chileData = WORLDBANK.CHL;
 const peruData = WORLDBANK.PER;
 const mexicoData = WORLDBANK.MEX;
@@ -9,90 +11,62 @@ const brasilData = WORLDBANK.BRA;
 /*Lectura y manejo de la variable país*/
 var urlParams = new URLSearchParams(window.location.search);
 let selectCountry = urlParams.get("country");
-
-
-// for (let i = 0; i < chileData.indicators.length; i++) {
-//  //   console.log(chileData.indicators[i].indicatorName);
-//  let indicatorSelect = document.getElementById("indicatorsSelect");
-//  let option = document.createElement("option");
-//  option.value = chileData.indicators[i].indicatorName;
-//  option.text = chileData.indicators[i].indicatorName;
-//  indicatorSelect.add(option);
-// }
+console.log(selectCountry);
 
 let selectedData;
 switch (selectCountry) {
- case "chile":
-   selectedData = chileData;
-   break;
- case "peru":
-   selectedData = peruData;
-   break;
- case "mexico":
-   selectedData = mexicoData;
-   break;
- case "brasil":
-   selectedData = brasilData;
-   break;
+  case "chile":
+    selectedData = chileData;
+    document.getElementById("bannerImg").classList.add("chileBanner");
+    document
+      .getElementById("bannerText")
+      .appendChild(document.createTextNode("Chile"));
+    break;
+  case "peru":
+    selectedData = peruData;
+    document.getElementById("bannerImg").classList.add("peruBanner");
+    document
+      .getElementById("bannerText")
+      .appendChild(document.createTextNode("Perú"));
+    break;
+  case "mexico":
+    selectedData = mexicoData;
+    document.getElementById("bannerImg").classList.add("mexicoBanner");
+    document
+      .getElementById("bannerText")
+      .appendChild(document.createTextNode("México"));
+    break;
+  case "brasil":
+    selectedData = brasilData;
+    document.getElementById("bannerImg").classList.add("brasilBanner");
+    document
+      .getElementById("bannerText")
+      .appendChild(document.createTextNode("Brasil"));
+    break;
 }
 
 for (let i = 0; i < selectedData.indicators.length; i++) {
- let indicatorList = document.getElementById("indicatorsSelect");
- let option = document.createElement("option");
- option.value = i;
- option.text = selectedData.indicators[i].indicatorName;
- indicatorList.add(option);
+  let indicatorList = document.getElementById("indicatorsSelect");
+  let option = document.createElement("option");
+  option.value = i;
+  option.text = selectedData.indicators[i].indicatorName;
+  indicatorList.add(option);
 }
 
 let selectIndicator;
 document.getElementById("indicatorsSelect").addEventListener("change", () => {
- selectIndicator = document.getElementById("indicatorsSelect").value;
- mostrarIndicador();
+
+  selectIndicator = document.getElementById("indicatorsSelect").value;
+  mostrarIndicador();
+});
+
+var graphPlaceholder = document
+  .getElementById("indicatorsChart")
+  .getContext("2d");
+
  showDoughnutMaxValue();
  showDoughnutAverageValue();
 });
-
-var graphPlaceholder = document.getElementById("myChart").getContext("2d");
-
-// *Código JavaScript del data.js:*
-/* Manejo de data */
-
-function mostrarIndicador() {
- // console.log(selectIndicator);
- // console.log(selectedData.indicators[selectIndicator]);
-
- // Inicializamos los arreglos vacios.
- let arrayToChart = [];
- let labelArray = [];
- let indicatorNumber = selectIndicator;
-
- // Estructura repetitiva para generar los puntos del gráfico en arreglo de objetos, a partir de la data.
- for (let year in selectedData.indicators[indicatorNumber].data) {
-   if (selectedData.indicators[indicatorNumber].data[year] === "") {
-     selectedData.indicators[indicatorNumber].data[year] = 0;
-   }
-
-   // Agregando al arreglo de los valores
-   arrayToChart.push(selectedData.indicators[indicatorNumber].data[year]);
-   // Agregando al arreglo de los años
-   labelArray.push(year);
- }
- // console.table(arrayToChart);
-
- // Generando el Gráfico
- var chart = new Chart(graphPlaceholder, {
-   type: "line",
-   data: {
-     labels: labelArray,
-     datasets: [
-       {
-         label: selectedData.indicators[indicatorNumber].indicatorName,
-         data: arrayToChart
-       }
-     ]
-   }
- });
-}
 
 
 //Agregando dona con el valor maximo
@@ -110,13 +84,7 @@ function showDoughnutMaxValue() {
 	}
 	minValue = 100 - maxValue;
 	var chart = document.getElementById('doughnutMax').getContext('2d');
-	// var cx = chart.width / 2;
- // 	var cy = chart.height / 2;
-	// chart.textAlign = 'center';
- //  chart.textBaseline = 'middle';
-	// chart.font="Roboto";
-	// chart.fillText(minValue,cx,cy);
-
+	
 	var config = {
 		type: 'doughnut',
 		data: {
@@ -220,3 +188,4 @@ var config = {
 		};
 	var doughnutMax = new Chart(chart, config);
 }
+

@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <title>Social Data</title>
-   <link href="images/logo2.png" rel="shortcut icon" />
-   <link rel="stylesheet" href="style.css" />
-   <link
-     href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-     rel="stylesheet"
-   />
-   <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"
-   />
- </head>
- <body>
-   <!-- Header de la página web, incluye logo y el menú de inicio y países-->
-   <header>
-     <div class="imgLogo">
-       <img class="logo" src="images/logo2.png" alt="logo" />
-     </div>
-     <div class="menu">
-       <ul>
-         <li><a href="index.html">Inicio</a></li>
-         <li><a class="active" href="country.html">Países</a></li>
-       </ul>
-     </div>
-   </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Social Data</title>
+    <link href="images/socialdata-logo.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header de la página web, incluye logo y el menú de inicio y países-->
+    <header>
+      <div class="imgLogo">
+        <img class="logo" src="images/socialdata-logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="country.html">Países</a></li>
+        </ul>
+      </div>
+    </header>
 
-   <!--Sección banner dinámico-->
+    <!--Sección banner dinámico-->
+    <section class="bannerIndicators">
+      <div id="bannerImg" class="bannerImg">
+        <div id="bannerText" class="bannerText"></div>
+      </div>
+      <div class="bannerOpacity"></div>
+    </section>
 
-   <!--Sección del selector de indicadores-->
-   <section class="indSelect">
-     <h3>Selecciona el indicador:</h3>
-     <select class="indicatorsSelect" id="indicatorsSelect">
-       <option value=""> </option>
-     </select>
-   </section>
+    <!--Sección del selector de indicadores-->
+    <section class="indSelect">
+      <h3>Selecciona el indicador:</h3>
+      <select class="indicatorsSelect" id="indicatorsSelect">
+        <option value=""> </option>
+      </select>
+    </section>
 
-
-   <canvas id="myChart" width="400" height="100"></canvas>
+    <div class="chartContainer">
+      <canvas id="indicatorsChart" class="myChart"></canvas>
+    </div>
+    
+     <canvas id="myChart" width="400" height="100"></canvas>
 <!--    <div id="doughnuts"> -->
  <!--    <div id="leftDoughnut"> -->
       <div id="canvas-holder">
@@ -56,35 +65,40 @@
     <!-- </div> -->
 <!--   </div> -->
 
+    <!--Sección para el footer-->
+    <section class="footer">
+      <div class="infoFooter">
+        <div class="imgLogo">
+          <a href="/">
+            <img
+              class="logo"
+              src="images/socialdata-logo-white.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="RRSS">
+          <div class="socialRedes">
+            <a href="https://twitter.com/BancoMundial" target="_blank">
+              <img src="images/twitter-square-brands.svg" alt="TwitterLogo" />
+              <p>/BancoMundial</p>
+            </a>
+          </div>
+          <div class="socialRedes">
+            <a href="https://www.facebook.com/bancomundial/" target="_blank">
+              <img src="images/facebook-square-brands.svg" alt="FacebookLogo" />
+              <p>/bancomunidal</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <!--Sección para el footer-->
-   <section class="footer">
-     <div class="infoFooter">
-       <div class="imgLogo">
-         <img class="logo" src="images/socialdata-logo-white.png" alt="logo" />
-       </div>
-       <div class="RRSS">
-         <div class="socialRedes">
-           <img src="images/twitter-square-brands.svg" alt="TwitterLogo" />
-           <a href="https://twitter.com/BancoMundial" target="_blank">
-             /BancoMundial</a
-           >
-         </div>
-         <div class="socialRedes">
-           <img src="images/facebook-square-brands.svg" alt="FacebookLogo" />
-           <a href="https://www.facebook.com/bancomundial/" target="_blank"
-             >/bancomunidal</a
-           >
-         </div>
-       </div>
-     </div>
-   </section>
-
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
    <script src="chartjs-plugin-doughnutlabel.min.js"></script>
    <script src="./data/worldbank/worldbank.js"></script>
    <script src="data.js"></script>
    <script src="main.js"></script>
- </body>
+  </body>
 </html>
+

@@ -11,18 +11,20 @@
 
 /*Generales*/
 html {
- margin: 0px;
+
+  margin: 0px;
 }
 body {
-font-family: "Roboto", sans-serif;
-font-size: 16px;
-color: var(--dark_blue);
-font-weight: normal;
-font-style: normal; 
-font-stretch: normal;
-letter-spacing: normal;
-margin: 0px;
-padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--dark_blue);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 0px;
+
 }
 /*Header (menú)*/
 header {
@@ -33,9 +35,10 @@ max-width: 994px;
 margin: 40px auto;
 }
 .logo {
-display: flex;
-width: 85px;
-height: 85px;
+
+  display: flex;
+  width: 85px;
+
 }
 a {
 color: inherit;
@@ -128,7 +131,21 @@ display: flex;
 background: #179387;
 }
 
-    
+.button {
+  border: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding: 11px 80px;
+  background: var(--dark_purple);
+  border-radius: 20px;
+  max-width: 287px;
+  max-height: 51px;
+  cursor: pointer;
+}
+/*Termina CSS del Hero Banner Home Page*/
+
 .countries {
 padding-top: 30px;
 align-items: flex-start;
@@ -139,6 +156,7 @@ justify-content: space-between;
  border-collapse: separate;
  border-spacing: 6px;
  margin-left: 150px;
+
 
 }
 
@@ -164,12 +182,11 @@ margin-left: 155px;
 	margin-right: 250px
 }
 
+
 .conex {
  display: flex;
  margin: 30px auto;
 }
-
-
 
 /*conexiones a href*/
 div .conexCh, .conexBr, .conexPe {
@@ -232,8 +249,11 @@ background: #6b48ff;
 }*/
 /*Informaciónm HomePage*/
 .information {
- display: flex;
- justify-content: space-between;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+
 }
 .info img {
  height: 135px;
@@ -298,48 +318,126 @@ background: #6b48ff;
 }
 /*Termina CSS del select dentro de la página indicators*/
 
-<div class="startButton">
-         <a class="button" href="countries.html">COMENZAR</a>
-       </div>
 
-       /*Footer*/
-.divBar hr {
- background-color: var(--main_color);
- height: 8px;
+/*Banner dinámico*/
+.bannerIndicators {
+  margin-bottom: 40px;
+  position: relative;
 }
+.bannerText {
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  top: 30%;
+  padding-left: 20%;
+  z-index: 3;
+}
+
+.bannerOpacity {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.bannerImg {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.chileBanner {
+  background-image: url(images/chile-banner.jpg);
+}
+
+.peruBanner {
+  background-image: url(images/peru-banner.jpg);
+}
+
+.mexicoBanner {
+  background-image: url(images/mexico-banner.jpg);
+}
+
+.brasilBanner {
+  background-image: url(images/brasil-banner.jpg);
+}
+/*Termina CSS del Banner de indicadores*/
+
+/*Select dentro de la página indicators*/
+.indicatorsSelect {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #d7dae2;
+  background-color: #ffffff;
+}
+.indSelect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 994px;
+  margin: 40px auto;
+  flex-direction: column;
+}
+/*Termina CSS del select dentro de la página indicators*/
+
 /*Footer*/
 .footer {
- background-color: var(--main_color);
- padding: 10px 0px;
+  background-color: var(--main_color);
+  padding: 10px 0px;
 }
-
 .infoFooter {
- display: flex;
- align-items: center;
- justify-content: space-around;
-/* max-width: 994px;
- margin: 20px auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 994px;
+  margin: 0px auto;
 
 }
 .RRSS {
  align-items: center;
 }
 .socialRedes {
-color: white;
- display: inline-flex;
- align-items: center;
+  color: white;
+  display: inline-flex;
+  align-items: center;
 }
 .socialRedes img {
- width: 36px;
- padding-left: 54px;
+  width: 36px;
+  padding-left: 54px;
+  padding-right: 10px;
 }
 .socialRedes a {
- padding-left: 10px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 /*Termina CSS footer*/
 
+/* Gráfico de línea de los indicadores */
+.indicatorsChart {
+  max-height: 260px;
+  max-width: 630px;
+}
 
+.chartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 994px;
+  margin: 40px auto;
+}
+/* Termina CSS gráfico de línea de los indicadores */
 
+/*estilo donas con valor máximo y promedio*/
 #doughnuts {
   width: 100%;
 }
@@ -356,12 +454,14 @@ color: white;
 
 /*RESPONSIVE del Home Page incluye header y footer*/
 
-
-@media (max-width: 1016px) {
+@media (max-width: 1024px) {
   header,
   .heroBanner,
-  .infoFooter {
-    padding: 20px 40px;
+
+  .infoFooter,
+  .indSelect {
+    padding: 20px 60px;
+
   }
 }
 
@@ -390,30 +490,38 @@ media (max-width: 340px) {
  }
 }
 
-@media (max-width: 700px) {
- .information {
-   flex-direction: column;
-   align-items: center;
- }
- .info {
-   margin-bottom: 20px;
-   align-items: center;
- }
- .info img {
-   max-width: 155px;
- }
+
+@media (max-width: 768px) {
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .info img {
+    max-width: 155px;
+  }
+  .indSelect {
+    padding: 0 35px;
+  }
+  .bannerText {
+    padding-left: 35px;
+  }
 }
 
 @media (max-width: 600px) {
- .socialRedes a {
-   display: none;
- }
+  .socialRedes a p {
+    display: none;
+  }
+
 }
 
 
 
 
 
-/*estilo donas con valor máximo y promedio*/
+
 
 

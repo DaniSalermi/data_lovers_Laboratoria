@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Social Data</title>
-<link href="images/social.jpg" rel="shortcut icon">
-<link rel="stylesheet" href="style.css">
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-  rel="stylesheet"/>
-</head>
-<body>
-  <header>
-     <div class="imgLogo">
-       <img class="logo" src="images/logo2.png" alt="logo">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Social Data</title>
+    <link href="images/socialdata-logo.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="imgLogo">
+        <img class="logo" src="images/socialdata-logo.png" alt="logo" />
       </div>
-     <div class="menu">
-       <ul>
-         <li><a href="index.html">Inicio</a></li>
-         <li><a class="active" href="country.html"></a>Países</li>
-       </ul>
-     </div>
-   </header>
-   <!-- sección segunda pagina socialdata (texto e imágen)-->
-   <nav>
-      <div class="banner"  >
-      <div class="content"><p>Se deben enfrentar grandes desafíos para ayudar a las personas más pobres del mundo, y garantizar que todos se beneficien del crecimiento económico. Los datos y las investigaciones sirven para establecer prioridades, intercambiar conocimientos acerca de las medidas que funcionan y mensurar avances. Con Social Data puedes ver los datos de tu país de manera fácil, accesible y ordenada.</p></div>
-     
-      <div class="banner" class="social"><img src="images/social.jpg" alt="social"></div>
-   </div> 
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="country.html">Países</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="content">
+        <p>
+          Se deben enfrentar grandes desafíos para ayudar a las personas más
+          pobres del mundo, y garantizar que todos se beneficien del crecimiento
+          económico. Los datos y las investigaciones sirven para establecer
+          prioridades, intercambiar conocimientos acerca de las medidas que
+          funcionan y mensurar avances. Con Social Data puedes ver los datos de
+          tu país de manera fácil, accesible y ordenada.
+        </p>
+      </div>
+      <div class="social"><img src="images/social.jpg" /></div>
+    </section>
 
-  </nav>
-<!-- sección segunda pagina socialdata (enlaces)-->
-<!-- Se agrega al href el html para el enlace con la lista desplegable -->
-<nav>
-  <div class="countries">
-    <div><a id="chFlag" class="chFlag" href="indicators.html?country=chile" ><img src="images/chile.png" alt="flag"></a>
-      </div>
-    <div><a id="brFlag" class="brFlag" href="indicators.html?country=brasil" ><img src="images/brasil.png" alt="flag"></a> 
-      </div> 
-    <div><a id="meFlag" class="meFlag" href="indicators.html?country=mexico" ><img src="images/mexico.png" alt="flag"></a> 
-      </div>
-    <div><a id="peFlag" class="peFlag" href="indicators.html?country=peru" ><img src="images/peru.png" alt="flag"></a>
-      </div>
-      </div>
+    <div>
+      <table class="image-table">
+        <tr>
+          <td>
+            <a class="chFlag" href="indicators.html?country=chile"
+              ><img src="images/chile.png"
+            /></a>
+          </td>
+          <td>
+            <a class="brFlag" href="indicators.html?country=brasil"
+              ><img src="images/brasil.png"
+            /></a>
+          </td>
+          <td>
+            <a class="meFlag" href="indicators.html?country=mexico"
+              ><img src="images/mexico.png"
+            /></a>
+          </td>
+          <td>
+            <a class="peFlag" href="indicators.html?country=peru"
+              ><img src="images/peru.png"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="button">
+            <a class="conexCh" href="indicators.html?country=chile">Chile</a>
+          </td>
+          <td>
+            <a class="conexBr" href="indicators.html?country=brasil">Brasil</a>
+          </td>
 
-      </nav>
-
-    <nav>
-    <div class="conex">
-    <div><a id="conexCh" class="conexCh" href="indicators.html?country=chile">Chile</a>
-      </div>
-    <div><a id="conexBr" class="conexBr" href="indicators.html?country=brasil">Brasil</a>
-      </div>
-    <div><a id="conexMe" class="conexMe" href="indicators.html?country=mexico">México</a>
-      </div>
-    <div><a id="conexPe" class="conexPe" href="indicators.html?country=peru">Perú</a>
-      </div>
+          <td>
+            <a class="conexMex" href="indicators.html?country=mexico">México</a>
+          </td>
+          <td>
+            <a class="conexPe" href="indicators.html?country=peru">Perú</a>
+          </td>
+        </tr>
+      </table>
     </div>
-    </nav>
 
-   <!--Sección para el footer-->
-   <section class="footer">
-     <div class="divBar"><hr/></div>
-     <div class="infoFooter">
-       <div class="imgLogo">
-         <img class="logo" src="images/logo2.png" alt="logo" />
-       </div>
-       <div class="RRSS">
-         <div class="socialRedes">
-           <img
-             src="images/twitter-square-brands.svg"
-             href="https://twitter.com/BancoMundial"
-             alt="TwitterLogo"
-           />
-           <a href="https://twitter.com/BancoMundial" target="_blank">
-             /BancoMundial</a
-           >
-         </div>
-         <div class="socialRedes">
-           <img
-             src="images/facebook-square-brands.svg"
-             href="https://www.facebook.com/bancomundial/"
-             alt="FacebookLogo"
-           />
-           <a href="https://www.facebook.com/bancomundial/" target="_blank"
-             >/bancomunidal</a
-           >
-         </div>
-       </div>
-     </div>
-   </section>
+    <!--Sección para el footer-->
+    <section class="footer">
+      <div class="infoFooter">
+        <div class="imgLogo">
+          <a href="/">
+            <img
+              class="logo"
+              src="images/socialdata-logo-white.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="RRSS">
+          <div class="socialRedes">
+            <a href="https://twitter.com/BancoMundial" target="_blank">
+              <img src="images/twitter-square-brands.svg" alt="TwitterLogo" />
+              <p>/BancoMundial</p>
+            </a>
+          </div>
+          <div class="socialRedes">
+            <a href="https://www.facebook.com/bancomundial/" target="_blank">
+              <img src="images/facebook-square-brands.svg" alt="FacebookLogo" />
+              <p>/bancomunidal</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-</body>
+    <script src="./data/worldbank/worldbank.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
 
 </html>
