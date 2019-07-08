@@ -1,17 +1,16 @@
 :root {
-/*Variables dentro del CSS*/
-/*COLORES*/
---light_gray: #f9f9f9;
---main_color: #179387;
---dark_purple: #6b48ff;
---dark_blue: #0d3f67;
---medium_green: #91CAC5;
---light_green: #DCEFED;
+  /*Variables dentro del CSS*/
+  /*COLORES*/
+  --light_gray: #f9f9f9;
+  --main_color: #179387;
+  --dark_purple: #6b48ff;
+  --dark_blue: #0d3f67;
+  --medium_green: #91cac5;
+  --light_green: #dcefed;
 }
 
 /*Generales*/
 html {
-
   margin: 0px;
 }
 body {
@@ -24,113 +23,63 @@ body {
   letter-spacing: normal;
   margin: 0px;
   padding: 0px;
-
 }
 /*Header (menú)*/
 header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-max-width: 994px;
-margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 994px;
+  margin: 40px auto;
 }
 .logo {
-
   display: flex;
   width: 85px;
-
 }
 a {
-color: inherit;
-text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 a.active {
-color: inherit;
-font-weight: bold;
-text-decoration: underline;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .menu ul li {
-list-style: none;
-display: inline;
-margin-left: 32px;
+  list-style: none;
+  display: inline;
+  margin-left: 32px;
 }
 /*Termina CSS del header (menú)*/
 
-.banner {
-display: flex;
-
-}
 /*Hero Banner Home Page*/
 .heroBanner {
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- background-color: #f9f9f9;
- padding: 46px 0;
- margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f9f9f9;
+  padding: 46px 0;
+  margin-bottom: 40px;
 }
 .textHeroBanner {
- flex: 1;
- max-width: 460px;
+  flex: 1;
+  max-width: 460px;
 }
 .textHeroBanner h1 {
- font-size: 24px;
- font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 .textHeroBanner h3 {
- font-weight: normal;
- margin-bottom: 80px;
+  font-weight: normal;
+  margin-bottom: 80px;
 }
 .imgHeroBanner {
- flex: 1;
- max-width: 310px;
+  flex: 1;
+  max-width: 310px;
 }
-
 .imgHeroBanner img {
- width: 100%;
+  width: 100%;
 }
-.button {
- border: inherit;
- font-family: inherit;
- text-align: center;
- font-size: 24px;
- color: white;
- padding: 11px 80px;
- background: var(--dark_purple);
- border-radius: 20px;
- max-width: 287px;
- max-height: 51px;
- cursor: pointer;
-}
-/*Termina CSS del Hero Banner Home Page*/
-
-div .content {
-width: 530px;
-height: 270px;
-font-family: Roboto;
-font-size: 20px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 1.3;
-letter-spacing: normal;
-color: #0d3f67;
-/*margin-left: 221px;*/
-margin-left: 221px;
-padding-top: 10px;
-display: flex;
-}
-/*estilo imagen*/
-div .banner, .social {
-  width: 450px; 
-height: 240px;
-/*margin-left: 221px;*/
-margin: auto;
-margin-right: 220px;
-display: flex;
-background: #179387;
-}
-
 .button {
   border: inherit;
   font-family: inherit;
@@ -146,178 +95,131 @@ background: #179387;
 }
 /*Termina CSS del Hero Banner Home Page*/
 
+/* Banner 2da página (informativo) */
+.banner {
+  display: flex;
+}
+
+div .content {
+  width: 530px;
+  height: 270px;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #0d3f67;
+  margin-left: 221px;
+  padding-top: 10px;
+  display: flex;
+}
+/*estilo imagen*/
+div .banner,
+.social {
+  width: 450px;
+  height: 240px;
+  margin: auto;
+  margin-right: 220px;
+  display: flex;
+  background: #179387;
+}
+/* Termina CSS banner 2da página (informativo) */
+
+/* Enlaces de los países a la página indicadores */
 .countries {
-padding-top: 30px;
-align-items: flex-start;
-display: flex;
-justify-content: center;
-justify-content: space-between;
- border: 0px solid rgba(0, 0, 0, 0);
- border-collapse: separate;
- border-spacing: 6px;
- margin-left: 150px;
-
-
+  padding-top: 30px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-collapse: separate;
+  border-spacing: 6px;
+  margin-left: 150px;
 }
 
-img {
- height: auto;
- max-width: 100%;
-}
 .chFlag {
-margin-left: 110px;
+  margin-left: 110px;
 }
 
 .brFlag {
-margin-left: 155px;
+  margin-left: 155px;
 }
 
 .meFlag {
-margin-left: 155px;
-/*margin-right: 150px;
-*/} 
-
-.peFlag {
-	margin-left: 165px;
-	margin-right: 250px
+  margin-left: 155px;
 }
 
+.peFlag {
+  margin-left: 165px;
+  margin-right: 250px;
+}
 
 .conex {
- display: flex;
- margin: 30px auto;
+  display: flex;
+  margin: 30px auto;
 }
 
 /*conexiones a href*/
-div .conexCh, .conexBr, .conexPe {
- border: inherit;
- font-family: inherit;
- text-align: center;
- font-size: 18px;
- color: white;
- padding: 10px 45px;
- background: #91CAC5;
- border-radius: 20px;
- align-items: flex-start;
-
+div .conexCh,
+.conexBr,
+.conexPe {
+  border: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 10px 45px;
+  background: #91cac5;
+  border-radius: 20px;
+  align-items: flex-start;
 }
 .conexCh {
-margin-left: 240px;
-text-align: center;
+  margin-left: 240px;
+  text-align: center;
 }
-
 .conexBr {
-margin-left: 100px;
-text-align: center;
+  margin-left: 100px;
+  text-align: center;
 }
-
 .conexMe {
-margin-left: 100px;
-margin-right: 115px;
-text-align: center;
-border: inherit;
- font-family: inherit;
- text-align: center;
- font-size: 18px;
- color: white;
- padding: 10px 35px;
- background: #91CAC5;
- border-radius: 20px;
- align-items: flex-start;
-
+  margin-left: 100px;
+  margin-right: 115px;
+  text-align: center;
+  border: inherit;
+  font-family: inherit;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 10px 35px;
+  background: #91cac5;
+  border-radius: 20px;
+  align-items: flex-start;
 }
-
 .conexPe {
-margin-right: 230px;
-text-align: center;
+  margin-right: 230px;
+  text-align: center;
 }
-
-.banner, .conex {
-justify-content: space-between;
-
+.banner,
+.conex {
+  justify-content: space-between;
 }
-
 /*aplicación del hover en (a href)*/
 .conex a:hover {
-background: #6b48ff;
+  background: #6b48ff;
 }
-/*
-.button {
-	background: none;
-	margin-bottom: 0px;
+/* TERMINA CSS ENLACES A LOS PAÍSES */
 
-}*/
 /*Informaciónm HomePage*/
 .information {
-
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
-
 }
 .info img {
- height: 135px;
- width: auto;
+  height: 135px;
+  width: auto;
 }
 /*Termina CSS de Información HomePage*/
-
-/*Banner dinámico*/
-.bannerIndicators {
- margin-bottom: 40px;
-}
-.bannerText {
- position: absolute;
- font-size: 60px;
- font-weight: bold;
- color: white;
- top: 30%;
- padding-left: 143px;
-}
-.bannerImg {
- height: 180px;
- width: 100%;
- background-size: cover;
- background-position: center center;
- opacity: 0.7;
-}
-
-.chileBanner {
- background-image: url(images/chile-banner.jpg);
-}
-
-.peruBanner {
- background-image: url(images/peru-banner.jpg);
-}
-
-.mexicoBanner {
- background-image: url(images/mexico-banner.jpg);
-}
-
-.brasilBanner {
- background-image: url(images/brasil-banner.jpg);
-}
-/*Termina CSS del Banner de indicadores*/
-
-/*Select dentro de la página indicators*/
-.indicatorsSelect {
- background: transparent;
- border: none;
- font-size: 14px;
- padding: 0px 143px;
- width: 994px;
- height: 38.3px;
- border-radius: 4px;
- box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
- border: solid 1px #d7dae2;
- background-color: #ffffff;
-}
-.indSelect {
- display: flex;
- flex-direction: column;
- padding: 0 143px;
-}
-/*Termina CSS del select dentro de la página indicators*/
-
 
 /*Banner dinámico*/
 .bannerIndicators {
@@ -333,7 +235,6 @@ background: #6b48ff;
   padding-left: 20%;
   z-index: 3;
 }
-
 .bannerOpacity {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.15);
@@ -349,19 +250,15 @@ background: #6b48ff;
   background-position: center center;
   z-index: 1;
 }
-
 .chileBanner {
   background-image: url(images/chile-banner.jpg);
 }
-
 .peruBanner {
   background-image: url(images/peru-banner.jpg);
 }
-
 .mexicoBanner {
   background-image: url(images/mexico-banner.jpg);
 }
-
 .brasilBanner {
   background-image: url(images/brasil-banner.jpg);
 }
@@ -400,10 +297,9 @@ background: #6b48ff;
   justify-content: space-between;
   max-width: 994px;
   margin: 0px auto;
-
 }
 .RRSS {
- align-items: center;
+  align-items: center;
 }
 .socialRedes {
   color: white;
@@ -427,7 +323,6 @@ background: #6b48ff;
   max-height: 260px;
   max-width: 630px;
 }
-
 .chartContainer {
   display: flex;
   align-items: center;
@@ -451,45 +346,41 @@ background: #6b48ff;
 }
 /*Termina CSS para donas 3era página*/
 
-
 /*RESPONSIVE del Home Page incluye header y footer*/
 
 @media (max-width: 1024px) {
   header,
   .heroBanner,
-
   .infoFooter,
   .indSelect {
     padding: 20px 60px;
-
   }
 }
 
 @media (max-width: 440px) {
   .textHeroBanner h3 {
-   display: none;
- }
+    display: none;
+  }
 
- .textHeroBanner h1 {
-   font-size: 14px;
-   margin-bottom: 40px;
- }
+  .textHeroBanner h1 {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 
- .button {
-   font-size: 14px;
-   padding: 11px 30px;
- }
+  .button {
+    font-size: 14px;
+    padding: 11px 30px;
+  }
 }
 
-media (max-width: 340px) {
- .menu ul li {
-   margin-left: 25px;
- }
- .menu ul {
-   padding: 0;
- }
+@media (max-width: 340px) {
+  .menu ul li {
+    margin-left: 25px;
+  }
+  .menu ul {
+    padding: 0;
+  }
 }
-
 
 @media (max-width: 768px) {
   .information {
@@ -515,13 +406,4 @@ media (max-width: 340px) {
   .socialRedes a p {
     display: none;
   }
-
 }
-
-
-
-
-
-
-
-
