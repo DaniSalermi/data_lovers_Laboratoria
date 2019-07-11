@@ -7,8 +7,11 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "test": "mocha",
+    "test": "mocha  test/**/*.js --reporter dot",
     "coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "target": "es6"
   },
   "dependencies": {
     "chai": "^4.2.0",

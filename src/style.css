@@ -288,29 +288,33 @@ a.active {
 /*Comienza CSS 2da pagina*/
 .banner {
   display: flex;
-  margin:  auto 220px;
+  margin: auto 220px;
 }
 
 /*Imágen y Texto*/
-.banner, .social, .social1  {
+.banner,
+.social,
+.social1 {
   display: flex;
 }
 
 .social {
   max-width: 700px;
-  height: auto;   
- font-size: 20px; 
- justify-content: space-between;
+  height: auto;
+  font-size: 20px;
+  justify-content: space-between;
 }
 
-.social1  {
-max-width: 100%;
-  height: auto;   
+.social1 {
+  max-width: 100%;
+  height: auto;
   justify-content: space-around;
 }
 
-/*Enlaces Banderas*/ 
-.containerSocial, .flag, .conex {
+/*Enlaces Banderas*/
+.containerSocial,
+.flag,
+.conex {
   display: flex;
   justify-content: space-around;
   margin: auto 10%;
@@ -323,25 +327,26 @@ max-width: 100%;
   color: white;
   padding: 20px 60px;
   margin-bottom: 100px;
- }
+}
 
 a:hover {
-background: #6b48ff;
+  background: #6b48ff;
 }
 
 /*Termina CSS para donas 2DA página*/
 
 /*CSS Donas 3ra Página*/
 
-section .doughnutMax, .doughnutAver {
-display: inline-flex;
-justify-content: space-around;
-padding: 0;
-align-items: center;
+section .doughnutMax,
+.doughnutAver {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
 }
 
 .doughnutMax {
- margin-left: 200px;
+  margin-left: 200px;
 }
 
 @media (max-width: 600px) {
@@ -352,111 +357,115 @@ align-items: center;
 
 /*RESPONSIVE 2da página*/
 @media (max-width: 1024px) {
-#banner .content .social {
-width: 20%;
+  #banner .content .social {
+    width: 20%;
+  }
 }
 
 @media (max-width: 1024px) {
-.social1 {
-display: none;
-}
-.containerSocial {
-flex-direction: column;
-}
+  .social1 {
+    display: none;
+  }
+  .containerSocial {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 800px) {
-.social {
-  width: 100%;
-  font-size: 12px;
-}
-.social1 {
-display: none
-}
-.containerSocial {
-flex-direction: column;
-}
-.conex {
-padding: 5px 5px;
-}
+  .social {
+    width: 100%;
+    font-size: 12px;
+  }
+  .social1 {
+    display: none;
+  }
+  .containerSocial {
+    flex-direction: column;
+  }
+  .conex {
+    padding: 5px 5px;
+  }
 }
 
 @media (max-width: 610px) {
   .social {
     display: none;
-font-size: 8px;
-}
-.social1 {
-display: none;
-}
-.containerSocial {
-flex-direction: column;
-}
-.conex {
-padding: 5px 5px;
-}
+    font-size: 8px;
+  }
+  .social1 {
+    display: none;
+  }
+  .containerSocial {
+    flex-direction: column;
+  }
+  .conex {
+    padding: 5px 5px;
+  }
 }
 
 @media (max-width: 440px) {
   .social {
     display: none;
-font-size: 8px;
-}
-.social1 {
-display: none;
-}
-.containerSocial {
-flex-direction: column;
-}
-.conex {
-padding: 5px 5px;
-}
+    font-size: 8px;
+  }
+  .social1 {
+    display: none;
+  }
+  .containerSocial {
+    flex-direction: column;
+  }
+  .conex {
+    padding: 5px 5px;
+  }
 }
 
 @media (min-width: 206px) and (max-width: 340px) {
-    .social {
-      display: none;
-font-size: 8px;
-width: 100%;
-}
-.social1 {
-display: none;
-}
-.containerSocial {
-flex-direction: column;
-}
-.conex {
-padding: 5px 5px;
-}
+  .social {
+    display: none;
+    font-size: 8px;
+    width: 100%;
+  }
+  .social1 {
+    display: none;
+  }
+  .containerSocial {
+    flex-direction: column;
+  }
+  .conex {
+    padding: 5px 5px;
+  }
 }
 /*Termina RESPONSIVE 2da página*/
 
 /*RESPONSIVE DONAS 3RA página*/
 @media (max-width: 1024px) {
-section .doughnutMax, .doughnutAver {
-  width: 50%;
-
-}
+  section .doughnutMax,
+  .doughnutAver {
+    width: 50%;
+  }
 }
 
 @media (max-width: 800px) {
-section .doughnutMax, .doughnutAver  {
-  width: 50%;
-}
+  section .doughnutMax,
+  .doughnutAver {
+    width: 50%;
+  }
   .containerSocial {
-  flex-direction: column;
-}
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 440px) {
-  section .doughnutMax, .doughnutAver  {
-display: none;
-}
+  section .doughnutMax,
+  .doughnutAver {
+    display: none;
+  }
 }
 
 @media (min-width: 206px) and (max-width: 340px) {
-  section .doughnutMax, .doughnutAver  {
-display: none; 
-}
+  section .doughnutMax,
+  .doughnutAver {
+    display: none;
+  }
 }
 /*Termina RESPONSIVE DONAS 3RA página*/

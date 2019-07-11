@@ -5,6 +5,7 @@ window.data = {
   // FUNCIÓN PARA ORDENAR INDICADORES DENTRO DEL SELECT
   orderIndicators: indicators => {
     return indicators.sort((a, b) =>
+      /* istanbul ignore next */
       a.indicatorName < b.indicatorName ? -1 : 1
     );
   },
