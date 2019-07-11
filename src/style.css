@@ -45,6 +45,9 @@ a.active {
   font-weight: bold;
   text-decoration: underline;
 }
+.menu {
+  display: inline-flex;
+}
 .menu ul li {
   list-style: none;
   display: inline;
@@ -221,7 +224,7 @@ div .conexCh,
 }
 /*Termina CSS de Información HomePage*/
 
-/*Banner dinámico*/
+/*Banner dinámico página indicadores*/
 .bannerIndicators {
   margin-bottom: 40px;
   position: relative;
@@ -262,7 +265,7 @@ div .conexCh,
 .brasilBanner {
   background-image: url(images/brasil-banner.jpg);
 }
-/*Termina CSS del Banner de indicadores*/
+/*Termina CSS del Banner dinámico página de indicadores*/
 
 /*Select dentro de la página indicators*/
 .indicatorsSelect {
@@ -278,7 +281,7 @@ div .conexCh,
 }
 .indSelect {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
   max-width: 994px;
   margin: 40px auto;
@@ -300,6 +303,7 @@ div .conexCh,
 }
 .RRSS {
   align-items: center;
+  display: inline-flex;
 }
 .socialRedes {
   color: white;
@@ -320,8 +324,8 @@ div .conexCh,
 
 /* Gráfico de línea de los indicadores */
 .indicatorsChart {
-  max-height: 260px;
-  max-width: 630px;
+  max-height: 350px;
+  max-width: 100%;
 }
 .chartContainer {
   display: flex;
@@ -352,7 +356,8 @@ div .conexCh,
   header,
   .heroBanner,
   .infoFooter,
-  .indSelect {
+  .indSelect,
+  .indicatorsChart {
     padding: 20px 60px;
   }
 }
@@ -373,12 +378,19 @@ div .conexCh,
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 376px) {
   .menu ul li {
     margin-left: 25px;
   }
   .menu ul {
     padding: 0;
+  }
+  header,
+  .heroBanner,
+  .infoFooter,
+  .indSelect,
+  .indicatorsChart {
+    padding: 0px 15px;
   }
 }
 

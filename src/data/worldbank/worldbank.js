@@ -36721,3 +36721,5 @@ const WORLDBANK = {
   }
 }
 ;;
+
+window.WORLDBANK = WORLDBANK;
