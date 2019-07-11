@@ -33,7 +33,7 @@ describe("data", () => {
       assert.equal(typeof window.data.orderIndicators, "function");
     });
 
-    it("debería retornar 1 para un par de nombres de indicadores", () => {
+    it("debería retornar un arreglo, que se encuentre ordenado alfabeticamente, según el parámetro 'indicatorName'", () => {
       let resultIndicatorsOrdered = [
         {
           data: { "2001": "", "2002": 31.4799995422363 },
