@@ -98,120 +98,6 @@ a.active {
 }
 /*Termina CSS del Hero Banner Home Page*/
 
-/* Banner 2da página (informativo) */
-.banner {
-  display: flex;
-}
-
-div .content {
-  width: 530px;
-  height: 270px;
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 1.3;
-  letter-spacing: normal;
-  color: #0d3f67;
-  margin-left: 221px;
-  padding-top: 10px;
-  display: flex;
-}
-/*estilo imagen*/
-div .banner,
-.social {
-  width: 450px;
-  height: 240px;
-  margin: auto;
-  margin-right: 220px;
-  display: flex;
-  background: #179387;
-}
-/* Termina CSS banner 2da página (informativo) */
-
-/* Enlaces de los países a la página indicadores */
-.countries {
-  padding-top: 30px;
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-collapse: separate;
-  border-spacing: 6px;
-  margin-left: 150px;
-}
-
-.chFlag {
-  margin-left: 110px;
-}
-
-.brFlag {
-  margin-left: 155px;
-}
-
-.meFlag {
-  margin-left: 155px;
-}
-
-.peFlag {
-  margin-left: 165px;
-  margin-right: 250px;
-}
-
-.conex {
-  display: flex;
-  margin: 30px auto;
-}
-
-/*conexiones a href*/
-div .conexCh,
-.conexBr,
-.conexPe {
-  border: inherit;
-  font-family: inherit;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  padding: 10px 45px;
-  background: #91cac5;
-  border-radius: 20px;
-  align-items: flex-start;
-}
-.conexCh {
-  margin-left: 240px;
-  text-align: center;
-}
-.conexBr {
-  margin-left: 100px;
-  text-align: center;
-}
-.conexMe {
-  margin-left: 100px;
-  margin-right: 115px;
-  text-align: center;
-  border: inherit;
-  font-family: inherit;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  padding: 10px 35px;
-  background: #91cac5;
-  border-radius: 20px;
-  align-items: flex-start;
-}
-.conexPe {
-  margin-right: 230px;
-  text-align: center;
-}
-.banner,
-.conex {
-  justify-content: space-between;
-}
-/*aplicación del hover en (a href)*/
-.conex a:hover {
-  background: #6b48ff;
-}
-/* TERMINA CSS ENLACES A LOS PAÍSES */
-
 /*Informaciónm HomePage*/
 .information {
   display: flex;
@@ -336,20 +222,6 @@ div .conexCh,
 }
 /* Termina CSS gráfico de línea de los indicadores */
 
-/*estilo donas con valor máximo y promedio*/
-#doughnuts {
-  width: 100%;
-}
-#leftDoughnut {
-  width: 50%;
-  float: left;
-}
-#rightDoughnut {
-  width: 50%;
-  float: right;
-}
-/*Termina CSS para donas 3era página*/
-
 /*RESPONSIVE del Home Page incluye header y footer*/
 
 @media (max-width: 1024px) {
@@ -413,9 +285,178 @@ div .conexCh,
     padding-left: 35px;
   }
 }
+/*Comienza CSS 2da pagina*/
+.banner {
+  display: flex;
+  margin:  auto 220px;
+}
+
+/*Imágen y Texto*/
+.banner, .social, .social1  {
+  display: flex;
+}
+
+.social {
+  max-width: 700px;
+  height: auto;   
+ font-size: 20px; 
+ justify-content: space-between;
+}
+
+.social1  {
+max-width: 100%;
+  height: auto;   
+  justify-content: space-around;
+}
+
+/*Enlaces Banderas*/ 
+.containerSocial, .flag, .conex {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 10%;
+  padding-top: 30px;
+}
+
+.conex {
+  border-radius: 20px;
+  background: #91cac5;
+  color: white;
+  padding: 20px 60px;
+  margin-bottom: 100px;
+ }
+
+a:hover {
+background: #6b48ff;
+}
+
+/*Termina CSS para donas 2DA página*/
+
+/*CSS Donas 3ra Página*/
+
+section .doughnutMax, .doughnutAver {
+display: inline-flex;
+justify-content: space-around;
+padding: 0;
+align-items: center;
+}
+
+.doughnutMax {
+ margin-left: 200px;
+}
 
 @media (max-width: 600px) {
   .socialRedes a p {
     display: none;
   }
 }
+
+/*RESPONSIVE 2da página*/
+@media (max-width: 1024px) {
+#banner .content .social {
+width: 20%;
+}
+
+@media (max-width: 1024px) {
+.social1 {
+display: none;
+}
+.containerSocial {
+flex-direction: column;
+}
+}
+
+@media (max-width: 800px) {
+.social {
+  width: 100%;
+  font-size: 12px;
+}
+.social1 {
+display: none
+}
+.containerSocial {
+flex-direction: column;
+}
+.conex {
+padding: 5px 5px;
+}
+}
+
+@media (max-width: 610px) {
+  .social {
+    display: none;
+font-size: 8px;
+}
+.social1 {
+display: none;
+}
+.containerSocial {
+flex-direction: column;
+}
+.conex {
+padding: 5px 5px;
+}
+}
+
+@media (max-width: 440px) {
+  .social {
+    display: none;
+font-size: 8px;
+}
+.social1 {
+display: none;
+}
+.containerSocial {
+flex-direction: column;
+}
+.conex {
+padding: 5px 5px;
+}
+}
+
+@media (min-width: 206px) and (max-width: 340px) {
+    .social {
+      display: none;
+font-size: 8px;
+width: 100%;
+}
+.social1 {
+display: none;
+}
+.containerSocial {
+flex-direction: column;
+}
+.conex {
+padding: 5px 5px;
+}
+}
+/*Termina RESPONSIVE 2da página*/
+
+/*RESPONSIVE DONAS 3RA página*/
+@media (max-width: 1024px) {
+section .doughnutMax, .doughnutAver {
+  width: 50%;
+
+}
+}
+
+@media (max-width: 800px) {
+section .doughnutMax, .doughnutAver  {
+  width: 50%;
+}
+  .containerSocial {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 440px) {
+  section .doughnutMax, .doughnutAver  {
+display: none;
+}
+}
+
+@media (min-width: 206px) and (max-width: 340px) {
+  section .doughnutMax, .doughnutAver  {
+display: none; 
+}
+}
+/*Termina RESPONSIVE DONAS 3RA página*/
