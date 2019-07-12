@@ -308,7 +308,7 @@ a.active {
 .social1 {
   max-width: 100%;
   height: auto;
-  justify-content: space-around;
+  text-align: center;
 }
 
 /*Enlaces Banderas*/
