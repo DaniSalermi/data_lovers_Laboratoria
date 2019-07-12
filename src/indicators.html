@@ -33,18 +33,18 @@
     </header>
 
     <!--Sección banner dinámico-->
-    <section class="bannerIndicators">
+    <div class="bannerIndicators">
       <div id="bannerImg" class="bannerImg">
         <div id="bannerText" class="bannerText"></div>
       </div>
       <div class="bannerOpacity"></div>
-    </section>
+    </div>
 
     <!--Sección del selector de indicadores-->
     <section class="indSelect">
       <h3>Selecciona el indicador:</h3>
       <select class="indicatorsSelect" id="indicatorsSelect">
-        <option value=""> </option>
+        <option label="Seleccione indicador" value="-"></option>
       </select>
     </section>
 
@@ -52,21 +52,21 @@
       <canvas class="indicatorsChart" id="indicatorsChart"></canvas>
     </div>
 
-    <section class="donutSection">
+    <div class="donutSection">
       <!-- Canvas para crear donas con ponderación máximo y promedio -->
       <div class="doughnutMax">
-        <canvas id="doughnutMax" width="auto"></canvas>
+        <canvas id="doughnutMax" width="400"></canvas>
       </div>
       <div class="doughnutMax">
-        <canvas id="doughnutAverages" width="auto"></canvas>
+        <canvas id="doughnutAverages" width="400"></canvas>
       </div>
-    </section>
+    </div>
 
     <!--Sección para el footer-->
-    <section class="footer">
+    <div class="footer">
       <div class="infoFooter">
         <div class="imgLogo">
-          <a href="/">
+          <a href="index.html">
             <img
               class="logo"
               src="images/socialdata-logo-white.png"
@@ -89,7 +89,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="chartjs-plugin-doughnutlabel.min.js"></script>

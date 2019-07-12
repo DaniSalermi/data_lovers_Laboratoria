@@ -9,8 +9,6 @@ const brasilData = window.WORLDBANK.BRA;
 /*Lectura y manejo de la variable país*/
 var urlParams = new URLSearchParams(window.location.search);
 let selectCountry = urlParams.get("country");
-let labelArrayGraph = null;
-let arrayToChartGraph = null;
 // console.log(selectCountry);
 
 let selectedData;
@@ -60,11 +58,11 @@ for (let i = 0; i < selectedData.indicators.length; i++) {
 document.getElementById("indicatorsSelect").addEventListener("change", () => {
   const selectedIndicator = document.getElementById("indicatorsSelect").value;
 
-  labelArrayGraph = window.data.informationToGenerateGraph(
+  const labelArrayGraph = window.data.informationToGenerateGraph(
     selectedData,
     selectedIndicator
   ).labelArray;
-  arrayToChartGraph = window.data.informationToGenerateGraph(
+  const arrayToChartGraph = window.data.informationToGenerateGraph(
     selectedData,
     selectedIndicator
   ).arrayToChart;
