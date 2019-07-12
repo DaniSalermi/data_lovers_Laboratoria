@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title>Social Data</title>
     <link href="images/socialdata-logo.png" rel="shortcut icon" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"
     />
   </head>
   <body>
@@ -22,55 +26,42 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a class="active" href="index.html">Inicio</a></li>
-          <li><a href="country.html">Países</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="country.html">Países</a></li>
         </ul>
       </div>
     </header>
 
-    <!--Sección para el Hero Banner-->
-    <section class="heroBanner" id="heroBanner">
-      <div class="textHeroBanner">
-        <h1>
-          Una nueva manera de descubrir los datos del desarrollo Social
-        </h1>
-        <h3>
-          En social data nos preocupamos por los usuarios reales queremos que
-          los datos del desarrollo social de tu país llegue de manera rápida y
-          fácil a ti.
-        </h3>
-        <div class="startButton">
-          <a class="button" href="country.html">COMENZAR</a>
-        </div>
+    <!--Sección banner dinámico-->
+    <section class="bannerIndicators">
+      <div id="bannerImg" class="bannerImg">
+        <div id="bannerText" class="bannerText"></div>
       </div>
-      <div class="imgHeroBanner">
-        <img src="images/product_manager.svg" alt="Icono Product Manager" />
+      <div class="bannerOpacity"></div>
+    </section>
+
+    <!--Sección del selector de indicadores-->
+    <section class="indSelect">
+      <h3>Selecciona el indicador:</h3>
+      <select class="indicatorsSelect" id="indicatorsSelect">
+        <option value=""> </option>
+      </select>
+    </section>
+
+    <div class="chartContainer">
+      <canvas class="indicatorsChart" id="indicatorsChart"></canvas>
+    </div>
+
+    <section class="donutSection">
+      <!-- Canvas para crear donas con ponderación máximo y promedio -->
+      <div class="doughnutMax">
+        <canvas id="doughnutMax" width="auto"></canvas>
+      </div>
+      <div class="doughnutMax">
+        <canvas id="doughnutAverages" width="auto"></canvas>
       </div>
     </section>
-    <!--Sección información de Social Data-->
-    <section class="information">
-      <div class="info">
-        <img src="images/network_1.svg" alt="networkImg" />
-        <h3>
-          Accede a los datos<br />
-          desde donde estés
-        </h3>
-      </div>
-      <div class="info">
-        <img src="images/slide_on_graphic_chart.svg" alt="slideOnGraphicImg" />
-        <h3>
-          Visualiza los datos<br />
-          de manera amigable
-        </h3>
-      </div>
-      <div class="info">
-        <img src="images/analyza_data_and_chart.svg" alt="analyzaDataImg" />
-        <h3>
-          Te mostramos sólo<br />
-          lo que quieres ver
-        </h3>
-      </div>
-    </section>
+
     <!--Sección para el footer-->
     <section class="footer">
       <div class="infoFooter">
@@ -99,5 +90,11 @@
         </div>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="chartjs-plugin-doughnutlabel.min.js"></script>
+    <script src="./data/worldbank/worldbank.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

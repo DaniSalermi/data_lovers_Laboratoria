@@ -7,13 +7,34 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "test": "mocha"
+    "test": "mocha  test/**/*.js --reporter dot",
+    "coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "target": "es6"
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "eslint": "^5.9.0",
+    "chart.js": "^2.8.0",
     "eslint-plugin-jest": "^22.1.2",
     "htmlhint": "^0.10.1",
     "mocha": "^5.2.0"
+  },
+  "description": "* [Preámbulo](#preámbulo)\r * [Descripción](#resumen-del-proyecto)\r * [Consideraciones generales](#consideraciones-generales)\r * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)\r * [Parte obligatoria](#parte-obligatoria)\r * [Parte opcional](#parte-opcional-hacker-edition)\r * [Consideraciones técnicas](#consideraciones-técnicas)\r * [Primeros pasos](#primeros-pasos)\r * [Contenido de referencia](#contenido-de-referencia)\r * [Checklist](#checklist)",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrievelyn/SCL010-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/adrievelyn/SCL010-data-lovers/issues"
+  },
+  "homepage": "https://github.com/adrievelyn/SCL010-data-lovers#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nyc": "^14.1.1"
   }
 }
