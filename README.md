@@ -12,6 +12,7 @@
 - [Prototipo de baja fidelidad](#prototipo-de-baja-fidelidad)
 - [Prototipo de alta fidelidad](#prototipo-de-alta-fidelidad)
 - [Testeos de usabilidad](#testeos-de-usabilidad)
+- [UX](#UX)
 - [Evaluación Heurística - UX](#evaluación-heurística-UX)
 - [Contenido de referencia](#contenido-de-referencia)
 - [Diseño de experiencia de usuario](#diseño-de-experiencia-de-usuario)
@@ -189,6 +190,12 @@ Los links para las entrevistas son:
 ## Evaluación Heurística UX
 
 (https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+
+## Zeplin
+
+Para ver más fácil los elementos de CSS de nuestra página web, la misma se exportó a Zeplin para poder utilizar estos formatos durante el desarrollo.
+
+[Zeplin proyecto Social Data](https://zpl.io/a890WkK)
 
 # Contenido de referencia
 
