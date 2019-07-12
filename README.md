@@ -21,7 +21,6 @@
 - [Herramientas](#herramientas)
 - [Checklist](#checklist)
 
----
 
 # Preámbulo
 
@@ -189,7 +188,7 @@ Los links para las entrevistas son:
 
 ## Evaluación Heurística UX
 
-(https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+[Evaluación Heurística del proyecto Social Data](https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
 ## Zeplin
 
@@ -287,7 +286,7 @@ En estos también se comprobó que dichas funciones estuvieran realizando correc
 - [Google Forms](https://www.google.com/intl/es-419_cl/forms/about/)
 - [Notion](https://www.notion.so/danisalermi/Data-Lovers-a1d9b012053c4488bd71df09837e5a42)
 
----
+
 
 ## **Checklist**
 
