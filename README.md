@@ -11,7 +11,6 @@
 * [Prototipo de alta fidelidad](#prototipo-de-alta-fidelidad)
 * [Testeos de usabilidad](#testeos-de-usabilidad)
 * [Evaluación Heurística - UX](#evaluación-heurística-UX)
-* [Habilidades Blandas](#habilidades-blandas)
 * [Contenido de referencia](#contenido-de-referencia)
 * [Diseño de experiencia de usuario](#diseño-de-experiencia-de-usuario)
 * [Desarrollo Front-end](#Desarrollo-front-end)
