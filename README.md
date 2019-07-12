@@ -12,6 +12,7 @@
 - [Prototipo de baja fidelidad](#prototipo-de-baja-fidelidad)
 - [Prototipo de alta fidelidad](#prototipo-de-alta-fidelidad)
 - [Testeos de usabilidad](#testeos-de-usabilidad)
+- [UX](#UX)
 - [Evaluación Heurística - UX](#evaluación-heurística-UX)
 - [Contenido de referencia](#contenido-de-referencia)
 - [Diseño de experiencia de usuario](#diseño-de-experiencia-de-usuario)
@@ -19,8 +20,6 @@
 - [Desarrollo Front-end](#Desarrollo-front-end)
 - [Herramientas](#herramientas)
 - [Checklist](#checklist)
-
----
 
 # Preámbulo
 
@@ -187,7 +186,14 @@ Los links para las entrevistas son:
 # UX
 
 ## Evaluación Heurística UX
-(https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+
+[Evaluación Heurística del proyecto Social Data](https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+
+## Zeplin
+
+Para ver más fácil los elementos de CSS de nuestra página web, la misma se exportó a Zeplin para poder utilizar estos formatos durante el desarrollo.
+
+[Zeplin proyecto Social Data](https://zpl.io/a890WkK)
 
 # Contenido de referencia
 
@@ -279,8 +285,6 @@ En estos también se comprobó que dichas funciones estuvieran realizando correc
 - [Google Forms](https://www.google.com/intl/es-419_cl/forms/about/)
 - [Notion](https://www.notion.so/danisalermi/Data-Lovers-a1d9b012053c4488bd71df09837e5a42)
 
----
-
 ## **Checklist**
 
 - [x] Usa VanillaJS.
@@ -299,5 +303,5 @@ En estos también se comprobó que dichas funciones estuvieran realizando correc
 - [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [x] UI: Permite filtrar data en base a una condición.
