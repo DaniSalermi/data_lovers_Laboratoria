@@ -76,6 +76,8 @@ Para poder organizarnos y lograr los objetivos de nuestro proyecto, nos organiza
 
 [Trello Proyecto Social Data](https://trello.com/b/7BWVN9vA/proyecto-data-lovers-banco-mundial)
 
+![Trello Social Data](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Trello_Social_Data.PNG?raw=true)
+
 ## Encuestas realizadas:
 
 Lo primero fue realizar un boceto de la encuesta que queríamos llevar a cabo. El el siguiente [link](https://www.notion.so/danisalermi/Google-Form-Encuesta-a-usuarios-94b0ef3dbb6a42d3884a6bd69baec051) Se puede ver el proceso de diseño de la encuesta.
