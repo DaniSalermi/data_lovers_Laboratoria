@@ -189,7 +189,7 @@ Los links para las entrevistas son:
 
 ## Evaluación Heurística UX
 
-(https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+[Evaluación Heurística proyecto Social Data](https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
 ## Zeplin
 
