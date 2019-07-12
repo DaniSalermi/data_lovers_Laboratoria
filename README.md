@@ -187,6 +187,7 @@ Los links para las entrevistas son:
 # UX
 
 ## Evaluación Heurística UX
+
 (https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
 # Contenido de referencia
@@ -299,5 +300,5 @@ En estos también se comprobó que dichas funciones estuvieran realizando correc
 - [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [x] UI: Permite filtrar data en base a una condición.
