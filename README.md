@@ -70,6 +70,12 @@ Al examinar un archivo con datos del Banco Munidal, apareció la interrogante de
 
 Para empezar el proceso de investigación lo primero que realizamos fue una encuesta para ver que tan empapado en el tema estaban nuestros posibles usuarios, así como saber su interés en estos temas y como pensaban ellos que debía ser la mejor manera para mostrar los resultados de estos exhaustivos estudios realizados por el Banco Mundial.
 
+## Planificación y programación del desarrollo (Trello)
+
+Para poder organizarnos y lograr los objetivos de nuestro proyecto, nos organizamos con la herramienta Trello. Dividimos nuestras tareas por Historias de usario, y completamos los objetivos de nuestro desarrollo. Puedes revisar nuestro Trello en el siguiente Link:
+
+[Trello Proyecto Social Data](https://trello.com/b/7BWVN9vA/proyecto-data-lovers-banco-mundial)
+
 ## Encuestas realizadas:
 
 Lo primero fue realizar un boceto de la encuesta que queríamos llevar a cabo. El el siguiente [link](https://www.notion.so/danisalermi/Google-Form-Encuesta-a-usuarios-94b0ef3dbb6a42d3884a6bd69baec051) Se puede ver el proceso de diseño de la encuesta.
@@ -171,6 +177,8 @@ Una vez que obtuvimos el prototipo y durante el desarrollo en código del mismo,
 
 ![Alta fidelidad página 3 (Segunda iteración)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Alta_Fidelidad_3_iteracion_2.PNG?raw=true)
 
+De igual manera para revisar el resto de los prototipos se puede consultar nuestro link a [Adobe Xd](https://xd.adobe.com/view/708dd424-1a1a-4778-5897-d283ec68806b-06bc/)
+
 # Testeos de usabilidad
 
 Para los testeos de usabilidad, se elaboró una pequeña guía para presentarnos ante el usuario así cómo para conocerlo a el, la misma incluyó una breve descripción del proyecto, presentación del entrevistador, instrucciones del testeo, siempre recalcando al voluntario que en ningún momento estaban siendo a puestos a prueba ellos, sino el sistema. Por razones de tiempo sólo alcanzamos a realizar dos testeos, sin embargo pudimos notar un par de errores los cuales fueron:
@@ -194,6 +202,12 @@ Los links para las entrevistas son:
 Para ver más fácil los elementos de CSS de nuestra página web, la misma se exportó a Zeplin para poder utilizar estos formatos durante el desarrollo.
 
 [Zeplin proyecto Social Data](https://zpl.io/a890WkK)
+
+## Adobe Xd
+
+Para ver más información sobre el diseño de nuestros prototipos de alta fidelidad, puedes seguir el siguiente enlace:
+
+[Adobe Xd Proyecto Social Data](https://xd.adobe.com/view/708dd424-1a1a-4778-5897-d283ec68806b-06bc/)
 
 # Contenido de referencia
 
