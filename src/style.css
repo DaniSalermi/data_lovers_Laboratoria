@@ -264,6 +264,9 @@ a.active {
   .indicatorsChart {
     padding: 0px 15px;
   }
+  .social p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
