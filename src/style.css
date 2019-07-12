@@ -264,6 +264,9 @@ a.active {
   .indicatorsChart {
     padding: 0px 15px;
   }
+  .social p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -293,8 +296,7 @@ a.active {
 
 /*Imágen y Texto*/
 .banner,
-.social,
-.social1 {
+.social {
   display: flex;
 }
 
@@ -303,33 +305,44 @@ a.active {
   height: auto;
   font-size: 20px;
   justify-content: space-between;
+  padding: 0 2em;
 }
 
 .social1 {
   max-width: 100%;
   height: auto;
-  justify-content: space-around;
+  text-align: center;
 }
 
 /*Enlaces Banderas*/
 .containerSocial,
 .flag,
-.conex {
+.buttonCountries {
   display: flex;
   justify-content: space-around;
   margin: auto 10%;
   padding-top: 30px;
 }
 
-.conex {
+.containerSocial > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+
+.buttonCountries {
   border-radius: 20px;
   background: #91cac5;
   color: white;
-  padding: 20px 60px;
-  margin-bottom: 100px;
+  padding: 10px 50px;
+  font-size: 18px;
+  max-width: 145px;
 }
 
-a:hover {
+.buttonCountries:hover {
   background: #6b48ff;
 }
 
@@ -337,16 +350,11 @@ a:hover {
 
 /*CSS Donas 3ra Página*/
 
-section .doughnutMax,
-.doughnutAver {
-  display: inline-flex;
+.donutSection {
+  display: flex;
   justify-content: space-around;
   padding: 0;
   align-items: center;
-}
-
-.doughnutMax {
-  margin-left: 200px;
 }
 
 @media (max-width: 600px) {
@@ -362,110 +370,38 @@ section .doughnutMax,
   }
 }
 
-@media (max-width: 1024px) {
-  .social1 {
-    display: none;
-  }
-  .containerSocial {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 800px) {
   .social {
     width: 100%;
-    font-size: 12px;
+    padding: 0;
   }
-  .social1 {
-    display: none;
-  }
-  .containerSocial {
-    flex-direction: column;
-  }
-  .conex {
-    padding: 5px 5px;
+
+  .banner {
+    margin: 0;
+    padding: 0 4em;
+    flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 610px) {
-  .social {
-    display: none;
-    font-size: 8px;
-  }
-  .social1 {
-    display: none;
-  }
   .containerSocial {
     flex-direction: column;
-  }
-  .conex {
-    padding: 5px 5px;
   }
 }
 
-@media (max-width: 440px) {
-  .social {
-    display: none;
-    font-size: 8px;
-  }
-  .social1 {
-    display: none;
-  }
-  .containerSocial {
-    flex-direction: column;
-  }
-  .conex {
-    padding: 5px 5px;
-  }
-}
-
-@media (min-width: 206px) and (max-width: 340px) {
-  .social {
-    display: none;
-    font-size: 8px;
-    width: 100%;
-  }
-  .social1 {
-    display: none;
-  }
-  .containerSocial {
-    flex-direction: column;
-  }
-  .conex {
-    padding: 5px 5px;
-  }
-}
 /*Termina RESPONSIVE 2da página*/
 
 /*RESPONSIVE DONAS 3RA página*/
-@media (max-width: 1024px) {
-  section .doughnutMax,
-  .doughnutAver {
-    width: 50%;
-  }
-}
-
-@media (max-width: 800px) {
-  section .doughnutMax,
-  .doughnutAver {
-    width: 50%;
-  }
-  .containerSocial {
+@media (max-width: 500px) {
+  .donutSection {
     flex-direction: column;
   }
-}
 
-@media (max-width: 440px) {
-  section .doughnutMax,
-  .doughnutAver {
-    display: none;
+  .indicatorsChart {
+    padding: 0;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 206px) and (max-width: 340px) {
-  section .doughnutMax,
-  .doughnutAver {
-    display: none;
-  }
-}
 /*Termina RESPONSIVE DONAS 3RA página*/

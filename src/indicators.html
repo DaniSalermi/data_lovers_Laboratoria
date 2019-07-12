@@ -20,7 +20,9 @@
     <!-- Header de la página web, incluye logo y el menú de inicio y países-->
     <header>
       <div class="imgLogo">
-        <img class="logo" src="images/socialdata-logo.png" alt="logo" />
+        <a href="index.html"
+          ><img class="logo" src="images/socialdata-logo.png" alt="logo"
+        /></a>
       </div>
       <div class="menu">
         <ul>
@@ -50,16 +52,15 @@
       <canvas class="indicatorsChart" id="indicatorsChart"></canvas>
     </div>
 
-<section>
-    <!-- Canvas para crear donas con ponderación máximo y promedio -->
-    <div class="doughnutMax">
-      <canvas id="doughnutMax" width="400"></canvas>
-</div>
-<div class="doughnutMax">
-      <canvas id="doughnutAverages"  width="400"></canvas>
-    </div>
+    <section class="donutSection">
+      <!-- Canvas para crear donas con ponderación máximo y promedio -->
+      <div class="doughnutMax">
+        <canvas id="doughnutMax" width="auto"></canvas>
+      </div>
+      <div class="doughnutMax">
+        <canvas id="doughnutAverages" width="auto"></canvas>
+      </div>
     </section>
-
 
     <!--Sección para el footer-->
     <section class="footer">
