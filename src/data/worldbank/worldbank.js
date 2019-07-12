@@ -27601,7 +27601,7 @@ const WORLDBANK = {
           "2015": 32.9099998474121,
           "2016": 34.0999984741211,
           "2017": 33.7200012207031
-      },
+        },
         "countryName": "Chile",
         "countryCode": "CHL",
         "indicatorName": "Empleo de tiempo parcial, mujeres (% del total de mujeres empleadas)",
