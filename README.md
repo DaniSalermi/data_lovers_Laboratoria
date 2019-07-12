@@ -22,21 +22,19 @@
 
 ## **1. Preámbulo**
 
-El Grupo Banco Mundial, una de las fuentes más importantes de financiamiento y conocimiento para los países en desarrollo, está integrado por cinco instituciones que se han comprometido a reducir la pobreza, aumentar la prosperidad compartida y promover el desarrollo sostenible, realizando diversos estudios que contiene datos de series cronológicas sobre una variedad temas. 
+El Grupo Banco Mundial, una de las fuentes más importantes de financiamiento y conocimiento para los países en desarrollo, está integrado por cinco instituciones que se han comprometido a reducir la pobreza, aumentar la prosperidad compartida y promover el desarrollo sostenible, realizando diversos estudios que contiene datos de series cronológicas sobre una variedad de temas. 
 
 No obstante, los datos por sí mismos son de poca utilidad. Para que esas grandes cantidades de datos se conviertan en **información** fácil de leer para los usuarios, necesitamos entender y procesar estos datos.
 
-**SocialData** es una herramienta de análisis que contiene colecciones de indicadores del desarrollo del Banco Mundial, compilados a partir de fuentes internacionales reconocidas oficialmente. Una manera simple de
+### **SocialData** es una herramienta de análisis que contiene colecciones de indicadores del desarrollo del Banco Mundial, compilados a partir de fuentes internacionales reconocidas oficialmente. Una manera simple de
 hacerlo es creando _interfaces_ y _visualizaciones_.
 
 
 ### **2. Definición del Proyecto SocialData**
 
-**Social Data** presenta los datos más actuales y precisos disponibles sobre el desarrollo mundial e incluye estimaciones nacionales e internacionales, basándose en el ámbito de fuerza laboral, desempleo,  justificación de la violencia, nivel de educación o instrucción e inscripción escolar, igualdad de género.
+### **Social Data** presenta los datos más actuales y precisos disponibles sobre el desarrollo mundial e incluye estimaciones nacionales e internacionales, basándose en el ámbito de fuerza laboral, desempleo,  justificación de la violencia, nivel de educación o instrucción e inscripción escolar e igualdad de género.
 
-Contribuimos en el diseño y aplicación de estadísticas, en materia de desarrollo social, especialmente aquellas destinadas a erradicar la pobreza y brindar protección social a las personas o grupos vulnerables, promoviendo la movilidad e integración social. 
-
-Especialmente para ciudadanos comunes, y/ó profesionales en el área de Economía y Desarrollo Social, que deseen encontrar análisis, de la realidad social a través de resultados que no son cuantificables, de manera de detectar y comparar las necesidades en la Sociedad, con el objetivo de fomentar la inclusión social de los grupos más vulnerables,
+Dirigido especialmente para ciudadanos comunes, y/ó profesionales en el área de Economía y Desarrollo Social, que deseen encontrar análisis, a través de resultados que no son cuantificables, de manera de detectar y comparar las necesidades en la Sociedad, contribuyendo así, en el diseño y aplicación de estadísticas, en materia de desarrollo social, especialmente aquellas destinadas a erradicar la pobreza y brindar protección a las personas o grupos vulnerables, promoviendo la movilidad e integración.
 
  A la hora de representar los resultados de un análisis estadístico de un modo adecuado, son varias las publicaciones que podemos consultar. Aunque se aconseja que la presentación de datos numéricos se haga habitualmente por medio de tablas, en ocasiones un diagrama o un gráfico pueden ayudarnos a representar de un modo más eficiente nuestros datos. 
 
@@ -79,7 +77,7 @@ La página muestra gráficos amigables donde los puntos de inflexión tienen un 
 **Evaluación Heurística**
 (https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
-## **8. Contenido de referencia**
+### **8. Contenido de referencia**
 
 ### **9. Diseño de experiencia de usuario (User Experience Design)**
 
@@ -88,7 +86,7 @@ La página muestra gráficos amigables donde los puntos de inflexión tienen un 
 Para el diseño de la página el foco principal esta basado en las necesidades del usuario: ¿Qué información necesitan visualizar?, ¿Desea ver la data de un país en específico, ó hacer comparaciones entre varios países?, ¿Desea ver valores máximo y promedio?. 
 Debido a estas razones se crea una página simple y directa donde fácilmente el usuario pueda acceder a la data que busca.
 
-## Criterios de diseño:
+### **9.1 Criterios de diseño:**
 
 - Forma: Se mantuvo el mismo menú durante todo el recorrido de la página, para que el usuario no tenga confusiones y pueda volver a las diferentes secciones.
 
