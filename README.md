@@ -140,9 +140,26 @@ Los resultados obtenidos son:
 
 ### Primera iteración:
 
+![Baja Fidelidad pantalla 1](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Baja_Fidelidad_1.jpg?raw=true)
+
+![Baja Fidelidad pantalla 2](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Baja_Fidelidad_2.jpg?raw=true)
+
+![Baja Fidelidad pantalla 3 (Primera iteración)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Baja_Fidelidad_3.jpg?raw=true)
+
+### Segunda iteración:
+
+Luego de mostrar el prototipo a compañera y coach, notamos que la última pantalla presentaba muchas dudas y dificultades a la hora de escoger el indicador, por ello se procedió a realizar una segunda iteración de esta, basándonos además es nuestras historias de usuario antes descritas, obteniendo como resultado lo siguiente:
+
+![Baja fidelidad pantalla 3 (Segunda iteración)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Baja_Fidelidad_4.jpg?raw=true)
+
+> Written with [StackEdit](https://stackedit.io/).
+
 ## **Prototipo de alta fidelidad**
 
 # **6. Testeos de usabilidad**
+
+Para los testeos de usabilidad, se elaboró una pequeña guía para presentarnos ante el usuario así cómo para conocerlo a el.
+En primera instancia nos p
 
 # **7. UX**
 
@@ -168,6 +185,8 @@ Debido a estas razones se crea una página simple y directa donde fácilmente el
 - Color de Tipografía: blanco y negro para que sea más legible la información.
 
 - Tipografía: Roboto letras simples con contraste para que sean legibles.
+
+- Se elaboró además una pequeña guía de estilos para mantener la harmonía dentro del diseño de la página:
 
 # **10. Desarrollo Front-end**
 
