@@ -4,7 +4,7 @@
 
 ## **Índice**
 
-- [Preámbulo](#preámbulo)
+- [Preámbulo](#Preámbulo)
 - [Definición del Proyecto SocialData](#definición-del-producto-social-data)
 - [Objetivos del Proyecto](#objetivos-del-proyecto)
 - [Historias de usuario](#historias-de-usuario)
@@ -15,13 +15,14 @@
 - [Evaluación Heurística - UX](#evaluación-heurística-UX)
 - [Contenido de referencia](#contenido-de-referencia)
 - [Diseño de experiencia de usuario](#diseño-de-experiencia-de-usuario)
+- [Test Unitarios](#Test-Unitarios)
 - [Desarrollo Front-end](#Desarrollo-front-end)
 - [Herramientas](#herramientas)
 - [Checklist](#checklist)
 
 ---
 
-# **1. Preámbulo**
+# Preámbulo
 
 El Grupo Banco Mundial, una de las fuentes más importantes de financiamiento y conocimiento para los países en desarrollo, está integrado por cinco instituciones que se han comprometido a reducir la pobreza, aumentar la prosperidad compartida y promover el desarrollo sostenible, realizando diversos estudios que contiene datos de series cronológicas sobre una variedad de temas.
 
@@ -30,7 +31,7 @@ No obstante, los datos por sí mismos son de poca utilidad. Para que esas grande
 **SocialData** es una herramienta de análisis que contiene colecciones de indicadores del desarrollo del Banco Mundial, compilados a partir de fuentes internacionales reconocidas oficialmente. Una manera simple de
 hacerlo es creando _interfaces_ y _visualizaciones_.
 
-# **2. Definición del Proyecto SocialData**
+# Definición del Proyecto SocialData
 
 **Social Data** presenta los datos más actuales y precisos disponibles sobre el desarrollo mundial e incluye estimaciones nacionales e internacionales, basándose en el ámbito de fuerza laboral, desempleo, justificación de la violencia, nivel de educación o instrucción e inscripción escolar e igualdad de género.
 
@@ -38,13 +39,13 @@ Dirigido especialmente para ciudadanos comunes, y/ó profesionales en el área d
 
 A la hora de representar los resultados de un análisis estadístico de un modo adecuado, son varias las publicaciones que podemos consultar. Aunque se aconseja que la presentación de datos numéricos se haga habitualmente por medio de tablas, en ocasiones un diagrama o un gráfico pueden ayudarnos a representar de un modo más eficiente nuestros datos.
 
-# **3. Objetivos del Proyecto**
+# Objetivos del Proyecto
 
 En este Proyecto se abordará la representación gráfica de los resultados de un estudio, constatando su utilidad en el proceso de análisis estadístico y la presentación de datos. Se describirán dos de los distintos tipos de gráficos que podemos utilizar y su correspondencia con las distintas etapas del proceso de análisis.
 
 Cuando se dispone de datos de una población, y antes de abordar análisis estadísticos más complejos, un primer paso consiste en presentar esa información de forma que ésta se pueda visualizar de una manera más sistemática y resumida. Los datos que nos interesan dependen, en cada caso, del tipo de variables que estemos manejando.
 
-# **4. Historias de usuario**
+# Historias de usuario
 
 ## Usuario Nº1
 
@@ -62,7 +63,7 @@ _Yo, como profesional en el área de economía y desarrollo social, quiero ver l
 
 La página muestra gráficos amigables donde los puntos de inflexión tienen un color particular.
 
-# **5. Diseño de la Interfaz de Usuario**
+# Diseño de la Interfaz de Usuario
 
 ## El problema:
 
@@ -132,7 +133,7 @@ En la segunda iteración se puede observar un flujo más sencillo. Donde basadas
 Al realizar una segunda ronda de feedbacks y comentarios con nuestras compañeras y usuarios, pudimos ver que aún no estábamos tomando en cuenta todos los requerimientos solicitados por estos en las encuestas. Así que replantemos la 2da iteración dando a lugar una nueva, donde si bien se elimina mostrar la data con cuadros de datos, se agrega el poder visualizar los resultados del promedio y el valor máximo para el indicador seleccionado.
 ![Tercera iteración del flujo](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/iteracion_flujo_3.jpg?raw=true)
 
-## **Prototipo de baja fidelidad**
+## Prototipo de baja fidelidad
 
 A partir de las iteraciones del flujo se procede a hacer sketch del prototipo para mostrar los resultados. Procurando en todo momento mantener una estética simple, minimalista y amigable para el usuario.
 
@@ -152,30 +153,84 @@ Luego de mostrar el prototipo a compañera y coach, notamos que la última panta
 
 ![Baja fidelidad pantalla 3 (Segunda iteración)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Baja_Fidelidad_4.jpg?raw=true)
 
-> Written with [StackEdit](https://stackedit.io/).
+## Prototipo de alta fidelidad
 
-## **Prototipo de alta fidelidad**
+Al finalizar con el diseño del prototipo de baja fidelidad, se procede a realizar el diseño en una aplicación más confiable e incorporando los elemento de diseño que ayuden al usuario a lograr el fin de la página: mostrar los datos de manera gráfica más amigable.
+El resultado del diseño en el programa Adobe Xd, es el siguiente:
 
-# **6. Testeos de usabilidad**
+### Primera iteración:
 
-Para los testeos de usabilidad, se elaboró una pequeña guía para presentarnos ante el usuario así cómo para conocerlo a el.
-En primera instancia nos p
+![Alta fidelidad página 1](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Alta_Fidelidad_1.PNG?raw=true)
 
-# **7. UX**
+![Alta fidelidad página 2](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Alta_Fidelidad_2.PNG?raw=true)
 
-**Evaluación Heurística**
+![Alta fidelidad página 3 (iteración 1)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Alta_Fidelidad_3_iteracion_1.PNG?raw=true)
+
+Una vez que obtuvimos el prototipo y durante el desarrollo en código del mismo, nos percatamos de la dificultad para el usuario que era ver todo en una sola área de la página sin tener alguna separación, por lo que se procedió a realizar una segunda iteración de la última página del prototipo, resultando:
+
+### Segunda iteración:
+
+![Alta fidelidad página 3 (Segunda iteración)](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Alta_Fidelidad_3_iteracion_2.PNG?raw=true)
+
+# Testeos de usabilidad
+
+Para los testeos de usabilidad, se elaboró una pequeña guía para presentarnos ante el usuario así cómo para conocerlo a el, la misma incluyó una breve descripción del proyecto, presentación del entrevistador, instrucciones del testeo, siempre recalcando al voluntario que en ningún momento estaban siendo a puestos a prueba ellos, sino el sistema. Por razones de tiempo sólo alcanzamos a realizar dos testeos, sin embargo pudimos notar un par de errores los cuales fueron:
+
+- El usuario al solicitarle que fuera al inicio de la página, lo intentó a través del logo, el cual no se encontraba linkeado. Problema resuelto colocando en una etiqueta a, la imagen del logo.
+- Otro usuario no alcanzó a notar por su cuenta que los indicadores se encontraban ordenado de la A - Z. Cabe destacar que la persona no se encontraba tan familiarizada con el uso de computadores.
+
+Los links para las entrevistas son:
+[Test de usabilidad N1](https://drive.google.com/file/d/1J3lqY7D_uMt9ZtSQq96DCjf9j4OimNjz/view?usp=sharing) Persona no interactúa de manera frecuente con ordenadores.
+
+[Test de usabilidad N2](https://drive.google.com/file/d/1MBAb8iq3a8VbJ7NXAmc9DAasKTXwmDS2/view?usp=sharing) Estudiante de Laboratoria.
+
+# UX
+
+## Evaluación Heurística UX
 (https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
-# **8. Contenido de referencia**
+# Contenido de referencia
 
-# **9. Diseño de experiencia de usuario (User Experience Design)**
+Para la elaboración del proyecto se utilizaron diferente herramientas y fuentes de información, las herramientas son descritas algunos puntos más abajo. En esta sección aprovecharemos de dejar linkeados las páginas de las cuales extraímos información relevante para el correcto desarrollo y desempeño de la página web Social Data:
 
-## #Diseño
+- [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
+
+## ¿Dónde buscar ilustraciones?
+
+- [unDraw | Colorful illustrations](https://undraw.co/illustrations)
+
+- [Illustrations Gallery](https://gallery.manypixels.co/)
+
+- [Free vector illustrations - Ouch.pics](https://icons8.com/ouch/)
+
+## Fuentes de información:
+
+### Recorrido de un objeto con for:
+
+- [for in en Javascript](https://desarrolloweb.com/articulos/recorridos-propiedades-objetos-javascript-forin.html)
+
+- [for...in](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/for...in)
+
+### Generar un select a partir del DOM
+
+- [HTML DOM Select Object](https://www.w3schools.com/jsref/dom_obj_select.asp)
+
+### Gráficos de línea
+
+- [Line · Chart.js documentation](https://www.chartjs.org/docs/latest/charts/line.html)
+
+### Gráficos de Donut (para valores máximos y mínimos)
+
+- [Doughnut & Pie · Chart.js documentation](https://www.chartjs.org/docs/latest/charts/doughnut.html)
+
+# Diseño de experiencia de usuario
+
+## Diseño
 
 Para el diseño de la página el foco principal esta basado en las necesidades del usuario: ¿Qué información necesitan visualizar?, ¿Desea ver la data de un país en específico, ó hacer comparaciones entre varios países?, ¿Desea ver valores máximo y promedio?.
 Debido a estas razones se crea una página simple y directa donde fácilmente el usuario pueda acceder a la data que busca.
 
-## **9.1 Criterios de diseño:**
+## Criterios de diseño:
 
 - Forma: Se mantuvo el mismo menú durante todo el recorrido de la página, para que el usuario no tenga confusiones y pueda volver a las diferentes secciones.
 
@@ -186,9 +241,17 @@ Debido a estas razones se crea una página simple y directa donde fácilmente el
 
 - Tipografía: Roboto letras simples con contraste para que sean legibles.
 
-- Se elaboró además una pequeña guía de estilos para mantener la harmonía dentro del diseño de la página:
+- Se elaboró además una pequeña guía de estilos para mantener la harmonía dentro del diseño de la página: ![Guía de estilos](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Guia_de_Estilos.png?raw=true)
 
-# **10. Desarrollo Front-end**
+# Test Unitarios
+
+Se realizaron pruebas unitarias con la ayuda de [mocha.js](https://mochajs.org/), en ellos hicimos pruebas para comprobar el tipo de las estructuras repetitivas en el archivo JavaScript que maneja la data. El total de test realizados fue de 9.
+
+En estos también se comprobó que dichas funciones estuvieran realizando correctamente sus tareas, se les pasó como parámetro una pequeña data de ejemplo para realizar cálculos con resultados previamente conocidos y definidos. Los resultados obtenidos con estos test se observan en la siguiente imagen:
+
+![Resultados Test unitarios](https://github.com/adrievelyn/SCL010-data-lovers/blob/gh-pages/src/images/Readme_images/Test_Unitarios.PNG?raw=true)
+
+# Desarrollo Front-end
 
 - [Unidad de testing en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/11-testing/00-opening)
 - [Unidad de arreglos en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/04-arrays/01-arrays)
