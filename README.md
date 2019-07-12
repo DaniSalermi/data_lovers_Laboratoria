@@ -21,8 +21,6 @@
 - [Herramientas](#herramientas)
 - [Checklist](#checklist)
 
----
-
 # Preámbulo
 
 El Grupo Banco Mundial, una de las fuentes más importantes de financiamiento y conocimiento para los países en desarrollo, está integrado por cinco instituciones que se han comprometido a reducir la pobreza, aumentar la prosperidad compartida y promover el desarrollo sostenible, realizando diversos estudios que contiene datos de series cronológicas sobre una variedad de temas.
@@ -189,7 +187,7 @@ Los links para las entrevistas son:
 
 ## Evaluación Heurística UX
 
-[Evaluación Heurística proyecto Social Data](https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
+[Evaluación Heurística del proyecto Social Data](https://docs.google.com/spreadsheets/d/1bwD1CC624WAA-uuhRt7R2I9RryOh7OGBcCy0hZXUxtk/edit#gid=0)
 
 ## Zeplin
 
@@ -286,8 +284,6 @@ En estos también se comprobó que dichas funciones estuvieran realizando correc
 - [Chart.js](https://www.chartjs.org/)
 - [Google Forms](https://www.google.com/intl/es-419_cl/forms/about/)
 - [Notion](https://www.notion.so/danisalermi/Data-Lovers-a1d9b012053c4488bd71df09837e5a42)
-
----
 
 ## **Checklist**
 
